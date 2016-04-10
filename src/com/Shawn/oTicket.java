@@ -30,6 +30,5 @@ public class oTicket {
     public String toString(){
         return "Severity Rating: " + severity + ", ID: " + ticketID + ", Reported On: " + modifiedDate + ", By: "
                 + reporterName + ", For Issue: " + issueDesc + ".";
-
     }
 }
