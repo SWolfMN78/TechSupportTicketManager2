@@ -98,8 +98,8 @@ public class TicketGUI extends JFrame{
         clearIssueInfoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) { //clear the information in the issues info section.
-                txtReporterName.setText(" ");
-                txtIssueDescription.setText(" "); //make the information in this textbox an empty string.
+                txtReporterName.setText("");
+                txtIssueDescription.setText(""); //make the information in this textbox an empty string.
                 cmbxSeverity.setSelectedIndex(0); //set the combobox back to the 1st item.
                 txtReporterName.requestFocus(); //use of Stackover flow once the information is cleared focus the text her.
             }
@@ -110,7 +110,6 @@ public class TicketGUI extends JFrame{
                 oTicket toRemove = lstOpenTickets.getSelectedValue();
                 ticketDefaultListModel.removeElement(toRemove);
                 closedTicketsModel.addElement(toRemove);
-
             }
         });
         exitButton.addActionListener(new ActionListener() {
